@@ -6,7 +6,7 @@
       </h1>
       <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 md:py-4 md:flex md:items-center md:space-y-0 md:space-x-6">
         <img
-          src="https://tom.imgix.net/artsy/3.jpg"
+          src="https://tom.imgix.net/artsy/3.jpg?w=600"
           class="lg:w-3/5 md:w-1/3 w-full"
           sizes="sm:100vw md:33vw lg:60vw xl:60vw"
         />
