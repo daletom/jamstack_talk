@@ -27,8 +27,6 @@
           src="artsy/3.jpg"
           class="lg:w-3/5 md:w-1/3 w-full"
           sizes="sm:100vw md:33vw lg:60vw xl:60vw"
-          width="600"
-          height="334"
           :modifiers="{ ar: '1.8:1', auto: 'format' }"
         />
         <div class="text-center space-y-2">
@@ -66,8 +64,6 @@
           provider="imgix"
           :src="image"
           fit="crop"
-          width="360"
-          height="200"
           sizes="sm:100vw md:50vw lg:33vw xl:33vw"
           :modifiers="{ ar: '1.8:1', auto: 'format' }"
         />
