@@ -9,7 +9,7 @@
         provider="imgix"
         fit="crop"
           src="artsy/3.jpg"
-          class="lg:w-3/5 md:w-1/3 w-full"
+          class="lg:w-3/5 md:w-1/3 w-full h-auto"
           sizes="sm:100vw md:33vw lg:60vw xl:60vw"
           width="600"
           height="334"
@@ -27,6 +27,7 @@
         <nuxt-img
           provider="imgix"
           :src="image"
+          class="w-full h-auto"
           fit="crop"
           width="360"
           height="200"
