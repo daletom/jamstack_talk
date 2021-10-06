@@ -5,10 +5,15 @@
         Jamstack Conf Talk
       </h1>
       <div class="py-8 px-8 mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6 md:py-4 md:flex md:items-center md:space-y-0 md:space-x-6">
-        <img
-          src="https://tom.imgix.net/artsy/3.jpg?w=600&auto=format"
+        <nuxt-img
+        provider="imgix"
+        fit="crop"
+          src="artsy/3.jpg"
           class="lg:w-3/5 md:w-1/3 w-full"
           sizes="sm:100vw md:33vw lg:60vw xl:60vw"
+          width="600"
+          height="334"
+          :modifiers="{ ar: '1.8:1', auto: 'format' }"
         />
         <div class="text-center space-y-2">
           <div class="space-y-0.5">
@@ -23,8 +28,11 @@
           provider="imgix"
           :src="image"
           fit="crop"
+          width="360"
+          height="200"
+          loading="lazy"
           sizes="sm:100vw md:50vw lg:33vw xl:33vw"
-          :modifiers="{ ar: '1.8:1' }"
+          :modifiers="{ ar: '1.8:1', auto: 'format'  }"
         />
       </div>
     </div>
