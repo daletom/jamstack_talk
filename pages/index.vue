@@ -19,19 +19,23 @@
           md:flex
           md:items-center
           md:space-y-0 md:space-x-6
+          sm:w-full
+          w-2/3
         "
       >
         <nuxt-img
           provider="imgix"
           fit="crop"
           src="artsy/3.jpg"
-          class="lg:w-3/5 md:w-1/3 w-full"
+          width="600"
+          height="334"
+          class="lg:w-3/5 md:w-1/3 w-full h-auto"
           sizes="sm:100vw md:33vw lg:60vw xl:60vw"
           :modifiers="{ ar: '1.8:1', auto: 'format' }"
         />
         <div class="text-center space-y-2">
           <div class="space-y-0.5">
-            <p class="blog-description inline">
+            <p class="blog-description inline sm:w-full w-1/3">
               Hello everyone. This is for a talk at the Jamstack conf lounge. We
               are focusing on optimizing images in the JAMSTACK. Specifically,
               how to accelerate your pagespeed performance on Pagespeed
@@ -63,7 +67,10 @@
         <nuxt-img
           provider="imgix"
           :src="image"
+          class="w-full h-auto"
           fit="crop"
+          width="310"
+          height="172"
           sizes="sm:100vw md:50vw lg:33vw xl:33vw"
           :modifiers="{ ar: '1.8:1', auto: 'format' }"
         />
